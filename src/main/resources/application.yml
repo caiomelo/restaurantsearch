@@ -1,0 +1,4 @@
+app:
+  file:
+    restaurants: restaurants.csv
+    cuisines: cuisines.csv
