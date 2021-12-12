@@ -5,7 +5,7 @@ import com.training.restaurantsearch.domain.SearchCriteria;
 
 import java.util.List;
 
-public interface RestaurantsRepository {
+public interface RestaurantRepository {
 
     List<Restaurant> getByCriteria(SearchCriteria criteria);
 

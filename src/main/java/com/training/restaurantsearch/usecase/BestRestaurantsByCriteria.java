@@ -1,6 +1,6 @@
 package com.training.restaurantsearch.usecase;
 
-import com.training.restaurantsearch.dataprovider.RestaurantsRepository;
+import com.training.restaurantsearch.dataprovider.RestaurantRepository;
 import com.training.restaurantsearch.domain.Restaurant;
 import com.training.restaurantsearch.domain.SearchCriteria;
 import com.training.restaurantsearch.sort.RestaurantSorter;
@@ -9,12 +9,12 @@ import java.util.List;
 
 public class BestRestaurantsByCriteria {
 
-    public BestRestaurantsByCriteria(RestaurantsRepository repository, RestaurantSorter sorter) {
+    public BestRestaurantsByCriteria(RestaurantRepository repository, RestaurantSorter sorter) {
         this.repository = repository;
         this.sorter = sorter;
     }
 
-    private final RestaurantsRepository repository;
+    private final RestaurantRepository repository;
     private final RestaurantSorter sorter;
 
     public List<Restaurant> execute(SearchCriteria criteria) {

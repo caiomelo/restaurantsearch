@@ -1,6 +1,6 @@
 package com.training.restaurantsearch.usecase;
 
-import com.training.restaurantsearch.dataprovider.RestaurantsRepository;
+import com.training.restaurantsearch.dataprovider.RestaurantRepository;
 import com.training.restaurantsearch.domain.Restaurant;
 import com.training.restaurantsearch.domain.SearchCriteria;
 import com.training.restaurantsearch.sort.RestaurantSorter;
@@ -16,7 +16,7 @@ import static org.mockito.Mockito.*;
 
 class BestRestaurantsByCriteriaTest {
 
-    private final RestaurantsRepository repository = mock(RestaurantsRepository.class);
+    private final RestaurantRepository repository = mock(RestaurantRepository.class);
     private final RestaurantSorter sorter = mock(RestaurantSorter.class);
     private final SearchCriteria criteria = mock((SearchCriteria.class));
     private final BestRestaurantsByCriteria useCase = new BestRestaurantsByCriteria(repository, sorter);
@@ -30,7 +30,6 @@ class BestRestaurantsByCriteriaTest {
         verify(repository, times(1)).getByCriteria(criteria);
         verifyNoInteractions(sorter);
     }
-
 
     @Test
     void itShouldSortListsWithMoreThantFiveMatchesAndReturnTheFirstFive() {
@@ -61,5 +60,4 @@ class BestRestaurantsByCriteriaTest {
 
         return restaurants;
     }
-
 }
