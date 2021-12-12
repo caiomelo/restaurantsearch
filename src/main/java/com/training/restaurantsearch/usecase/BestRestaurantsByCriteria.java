@@ -4,9 +4,11 @@ import com.training.restaurantsearch.dataprovider.RestaurantRepository;
 import com.training.restaurantsearch.domain.Restaurant;
 import com.training.restaurantsearch.domain.SearchCriteria;
 import com.training.restaurantsearch.sort.RestaurantSorter;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class BestRestaurantsByCriteria {
 
     public BestRestaurantsByCriteria(RestaurantRepository repository, RestaurantSorter sorter) {

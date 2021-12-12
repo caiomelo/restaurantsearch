@@ -7,6 +7,7 @@ import com.training.restaurantsearch.file.CuisineDataReader;
 import com.training.restaurantsearch.file.RestaurantData;
 import com.training.restaurantsearch.file.RestaurantDataReader;
 import com.training.restaurantsearch.match.RestaurantMatcher;
+import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
@@ -16,6 +17,7 @@ import java.util.Map;
 
 import static java.util.stream.Collectors.*;
 
+@Repository
 public class RestaurantInMemoryRepository implements RestaurantRepository {
 
     public RestaurantInMemoryRepository(RestaurantDataReader restaurantDataReader, CuisineDataReader cuisineDataReader,
