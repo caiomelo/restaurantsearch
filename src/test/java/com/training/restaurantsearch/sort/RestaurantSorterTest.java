@@ -56,16 +56,4 @@ class RestaurantSorterTest {
                 new Restaurant("A", "Thai", 15, 3, 30)
         );
     }
-
-    private List<Restaurant> buildUnsortedRestaurants() {
-        return Arrays.asList(
-                new Restaurant("A", "Thai", 10, 2, 35),
-                new Restaurant("B", "Jap", 15, 3, 15),
-                new Restaurant("C", "Ita", 15, 3, 30),
-                new Restaurant("D", "Bra", 25, 5, 30),
-                new Restaurant("E", "Rus", 25, 4, 30),
-                new Restaurant("F", "Fra", 25, 4, 30)
-        );
-    }
-
 }
