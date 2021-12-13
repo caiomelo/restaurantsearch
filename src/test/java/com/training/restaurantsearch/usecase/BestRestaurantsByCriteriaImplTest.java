@@ -14,12 +14,12 @@ import java.util.UUID;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
-class BestRestaurantsByCriteriaTest {
+class BestRestaurantsByCriteriaImplTest {
 
     private final RestaurantRepository repository = mock(RestaurantRepository.class);
     private final RestaurantSorter sorter = mock(RestaurantSorter.class);
     private final SearchCriteria criteria = mock((SearchCriteria.class));
-    private final BestRestaurantsByCriteria useCase = new BestRestaurantsByCriteria(repository, sorter);
+    private final BestRestaurantsByCriteriaImpl useCase = new BestRestaurantsByCriteriaImpl(repository, sorter);
 
     @Test
     void itShouldNotSortListsWithLessThanSixMatches() {
