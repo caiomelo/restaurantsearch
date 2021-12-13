@@ -4,8 +4,8 @@ import com.training.restaurantsearch.domain.Restaurant;
 
 import java.util.List;
 
-public interface BestRestaurantsByCriteria {
+public interface RestaurantRepository {
 
-    List<Restaurant> execute(SearchCriteria criteria);
+    List<Restaurant> getByCriteria(SearchCriteria criteria);
 
 }

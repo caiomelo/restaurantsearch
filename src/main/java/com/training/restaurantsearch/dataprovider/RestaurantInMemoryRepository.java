@@ -1,12 +1,13 @@
 package com.training.restaurantsearch.dataprovider;
 
 import com.training.restaurantsearch.domain.Restaurant;
-import com.training.restaurantsearch.domain.SearchCriteria;
-import com.training.restaurantsearch.file.CuisineData;
-import com.training.restaurantsearch.file.CuisineDataReader;
-import com.training.restaurantsearch.file.RestaurantData;
-import com.training.restaurantsearch.file.RestaurantDataReader;
-import com.training.restaurantsearch.match.RestaurantMatcher;
+import com.training.restaurantsearch.usecase.RestaurantRepository;
+import com.training.restaurantsearch.usecase.SearchCriteria;
+import com.training.restaurantsearch.dataprovider.file.CuisineData;
+import com.training.restaurantsearch.dataprovider.file.CuisineDataReader;
+import com.training.restaurantsearch.dataprovider.file.RestaurantData;
+import com.training.restaurantsearch.dataprovider.file.RestaurantDataReader;
+import com.training.restaurantsearch.dataprovider.match.RestaurantMatcher;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;

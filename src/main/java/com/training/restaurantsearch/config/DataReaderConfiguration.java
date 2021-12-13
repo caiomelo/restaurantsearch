@@ -1,8 +1,8 @@
 package com.training.restaurantsearch.config;
 
-import com.training.restaurantsearch.file.CuisineDataReader;
-import com.training.restaurantsearch.file.DataReader;
-import com.training.restaurantsearch.file.RestaurantDataReader;
+import com.training.restaurantsearch.dataprovider.file.CuisineDataReader;
+import com.training.restaurantsearch.dataprovider.file.DataReader;
+import com.training.restaurantsearch.dataprovider.file.RestaurantDataReader;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

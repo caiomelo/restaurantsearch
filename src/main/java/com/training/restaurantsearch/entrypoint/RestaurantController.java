@@ -1,7 +1,7 @@
 package com.training.restaurantsearch.entrypoint;
 
 import com.training.restaurantsearch.domain.Restaurant;
-import com.training.restaurantsearch.domain.SearchCriteria;
+import com.training.restaurantsearch.usecase.SearchCriteria;
 import com.training.restaurantsearch.entrypoint.error.ValidationConstants;
 import com.training.restaurantsearch.usecase.BestRestaurantsByCriteria;
 import org.springframework.validation.annotation.Validated;

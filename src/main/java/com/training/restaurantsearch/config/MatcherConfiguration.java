@@ -1,6 +1,6 @@
 package com.training.restaurantsearch.config;
 
-import com.training.restaurantsearch.match.*;
+import com.training.restaurantsearch.dataprovider.match.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
